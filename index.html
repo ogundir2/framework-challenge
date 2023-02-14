@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Framework Challenge</title>
+</head>
+
+<body>
+    <main class="w-screen h-screen flex justify-center items-center bg-gray-200">
+        <div class="w-full max-w-xs form-container">
+            <p class="hidden confirmation-text"></p>
+            <form class="bg-white shadow-sm rounded p-8">
+                <div class="flex flex-col items-center justify-center mb-4">
+                    <p class="font-bold text-lg">MI 449 ESports</p>
+                    <p class="text-center text-sm text-gray-500">Sign up now and a representative will be in touch with you!</p>
+                </div>
+                <div class="mb-4 flex flex-col">
+                    <label class="font-semibold text-gray-700 mb-2" for="name">Name</label>
+                    <input required class="shadow border rounded h-10 w-full p-3 focus:shadow-outline" placeholder="Name" id="name" type="text">
+                </div>
+                <div class="mb-4 flex flex-col">
+                    <label class="font-semibold text-gray-700 mb-2" for="name">Email</label>
+                    <input required class="shadow border rounded h-10 w-full p-3 focus:shadow-outline" placeholder="Email" id="email" type="email">
+                </div>
+                <div class="mb-4 flex flex-col">
+                    <label class="font-semibold text-gray-700 mb-2" for="experience-level">Experience Level</label>
+                    <select required class="shadow border rounded h-10 w-full px-3 focus:shadow-outline" name="experience-level" id="experience-level">
+                        <option selected value="">Select</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                        <option value="Expert">Expert</option>
+                    </select>
+                </div>
+                <div class="mb-4 flex flex-col">
+                    <label class="font-semibold text-gray-700 mb-2" for="notes">Additional Notes</label>
+                    <textarea class="shadow border rounded w-full p-3 focus:shadow-outline" rows="2" id="notes"></textarea>
+                </div>
+                <button class="w-full font-semibold bg-green-900 text-white rounded p-2">Sign Up</button>
+            </form>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
